@@ -78,7 +78,11 @@ public class HuffmanTree {
      * @param in the input file (as a BitInputStream)
      */
     public HuffmanTree(BitInputStream in) {
-        for()
+        // int n = in.readBit();
+        // PriorityQueue<Node> que = new PriorityQueue<Node>();
+        // if(n == 1){
+
+        // }
     }
 
     public String preorder(Node n){
