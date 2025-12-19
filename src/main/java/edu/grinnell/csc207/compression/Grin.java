@@ -1,5 +1,6 @@
 package edu.grinnell.csc207.compression;
 
+import java.util.HashMap;
 import java.util.Map;
 
 /**
@@ -43,7 +44,13 @@ public class Grin {
      * @param args the command-line arguments.
      */
     public static void main(String[] args) {
-        // TODO: fill me in!
+        Map<Short, Integer> m = new HashMap<Short, Integer>();
+        m.put(Short.parseShort("5"), 1);
+        m.put(Short.parseShort("7"), 2);
+        m.put(Short.parseShort("20"), 3);
+        m.put(Short.parseShort("000001000"), 4);
+        m.put(Short.parseShort("000010000"), 5);
+        HuffmanTree huff = new HuffmanTree(m);
         System.out.println("Usage: java Grin <encode|decode> <infile> <outfile>");
     }
 }
